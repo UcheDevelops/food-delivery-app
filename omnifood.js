@@ -6,13 +6,17 @@ const menuIcon = document.querySelector(".ionicon");
 const navLinks = document.querySelector(".nav-links");
 
 var condition = false;
+
 menuIcon.addEventListener("click", () => {
   if (!condition) {
     navLinks.style.display = "flex";
     navLinks.style.right = "0";
+    menuIcon.style.border = "1px solid #636161";
+    menuIcon.style.borderRadius = "10px";
     condition = true;
   } else {
-    navLinks.style.right = "-30%";
+    navLinks.style.right = "-35%";
+    menuIcon.style.border = "none";
     condition = false;
   }
 });
