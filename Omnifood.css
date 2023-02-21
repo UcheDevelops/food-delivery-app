@@ -343,7 +343,8 @@ section .btn2:active {
   .omnifood-info {
     left: 3%;
     right: 3%;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 1.8;
     padding: 10px;
   }
 }
@@ -354,6 +355,6 @@ section .btn2:active {
   }
 
   .omnifood-info {
-    line-height: 1.7;
+    line-height: 1.6;
   }
 }
