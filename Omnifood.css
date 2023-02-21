@@ -274,7 +274,7 @@ section .btn2:active {
     flex-direction: column;
     justify-content: space-between;
     /* align-items: center; */
-    gap: 50px;
+    gap: 40px;
     padding: 10px 30px;
   }
 
@@ -307,7 +307,7 @@ section .btn2:active {
 
   section .section-innerbox h2 {
     font-size: 45px;
-    margin: 80px 0;
+    margin: 140px 0 50px 0;
   }
 
   section .btn1 {
@@ -351,11 +351,6 @@ section .btn2:active {
 @media screen and (max-width: 400px) {
   .container {
     width: 340px;
-  }
-
-  section .section-innerbox h2 {
-    font-size: 45px;
-    margin: 60px 0;
   }
 
   .omnifood-info {
