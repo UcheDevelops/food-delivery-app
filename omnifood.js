@@ -4,10 +4,10 @@ const closeBtn = document.querySelector(".close-btn");
 const blurScreen = document.querySelector(".blur");
 const menuIcon = document.querySelector(".ionicon");
 const navLinks = document.querySelector(".nav-links");
-
 var condition = false;
 
-menuIcon.addEventListener("click", () => {
+menuIcon.addEventListener("click", (e) => {
+  e.stopPropagation();
   if (!condition) {
     navLinks.style.display = "flex";
     navLinks.style.right = "0";
@@ -15,10 +15,20 @@ menuIcon.addEventListener("click", () => {
     menuIcon.style.borderRadius = "10px";
     condition = true;
   } else {
-    navLinks.style.right = "-35%";
+    navLinks.style.right = "-51%";
     menuIcon.style.border = "none";
     condition = false;
   }
+});
+
+navLinks.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+document.addEventListener("click", (e) => {
+  navLinks.style.right = "-51%";
+  menuIcon.style.border = "none";
+  condition = false;
 });
 
 learnMore.addEventListener("click", (e) => {
